@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+<head>
+  <title>www.isi.com</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="countainer">
+    <div class="menu">
+      <ul>
+        <li class="logo"><img src="55952650-retro-car-.jpg" alt=""></li>
+        <li><a href="home.html" class="hiper" style="color:black"> Home </a></li>
+        <li><a href="about%20us.html" class="hiper" style="color:black">About Us</a></li>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn"><a href="" class="" style="color:black" >Car listing</a></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="economy.html" style="color:black">Economy</a>
+            <a href="#Compact"> Compact</a>
+            <a href="#Estate">Estate </a>
+          </div>
+        </div>
+        <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+        <li>FAQS</li>
+        <li>Contact Us</li>
+        <li><a href="#" class="signup-btn"><span> Sign Up</span></a> </li>
+      </ul>
+    </div>
+    <div class="banner">
+      <div class="app-text">
+        <h1>Rent a car!</h1>
+        <h2>Sunny Cars. Rent a smile.</h2>
+        <p>Choose dates and location and book your car:</p>
+      </div>
+      <div class="app-picture">
+          <img src="9c1ed8330d90c061cb7f62ca09923e85.png" alt="">
+      </div>
+<div class="smart-wrap">
+  <div class="smart-forms smart-container wrap-2">
+
+    <div class="form-header header-primary">
+      <h4><i class="fa fa-calendar"></i>Make Room Reservations in Minutes</h4>
+    </div>
+
+    <form method="post" action="/" id="contact">
+      <div class="form-body">
+
+       <!-- OUR FORM ELEMENTS WILL GO HERE -->
+
+      </div>
+      <div class="form-footer">
+        <button type="submit" class="button btn-primary">Confirm Booking</button>
+        <button type="reset" class="button">Cancel</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+    </div>
+</body>
+</html>
